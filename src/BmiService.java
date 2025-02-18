@@ -1,7 +1,7 @@
 public class BmiService {
-    public int calculate(double heightInMeters, double weightInKilograms) {
+    public int calculate(double height, double weight) {
         // Формула BMI
-        double bmi = weightInKilograms / (heightInMeters * heightInMeters);
+        double bmi = weight / (height * height);
 
         // Округляем BMI до целого числа
         return (int) Math.round(bmi);
